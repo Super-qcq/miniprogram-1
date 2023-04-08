@@ -16,8 +16,10 @@ Page({
     wx.navigateTo({
       url: '../logs/logs',
     })
+   
   },
   onLoad() {
+    console.log(this.data.motto)
     // @ts-ignore
     if (wx.getUserProfile) {
       this.setData({
